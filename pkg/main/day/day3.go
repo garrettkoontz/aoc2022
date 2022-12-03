@@ -12,6 +12,37 @@ type sack struct {
 	Compartment2 map[rune]int
 }
 
+func (s *sack) combined() map[rune]int {
+	newMap := make(map[rune]int)
+	for k, v := range s.Compartment1 {
+		newMap[k] = v
+	}
+	for k, v2 := range s.Compartment2 {
+		v, ok := s.Compartment2[k]
+		if ok {
+			newMap[k] = v + v2
+			continue
+		}
+		newMap[k] = v2
+	}
+	return newMap
+}
+
+func share(i1 map[rune]int, i2 map[rune]int, i3 map[rune]int) rune {
+	share1 := make(map[rune]bool)
+	for k, _ := range i1 {
+		if _, ok := i2[k]; ok {
+			share1[k] = true
+		}
+	}
+	for k, _ := range share1 {
+		if _, ok := i3[k]; ok {
+			return k
+		}
+	}
+	return '@'
+}
+
 func (s *sack) share() rune {
 	for k, _ := range s.Compartment1 {
 		if _, ok := s.Compartment2[k]; ok {
@@ -74,5 +105,10 @@ func (d Day3) part1(stacks []*sack) int {
 }
 
 func (d Day3) part2(stacks []*sack) int {
-	return 0
+	p := 0
+	for i := 0; i < len(stacks); i += 3 {
+		c := share(stacks[i].combined(), stacks[i+1].combined(), stacks[i+2].combined())
+		p += priority(c)
+	}
+	return p
 }
