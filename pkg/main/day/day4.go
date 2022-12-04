@@ -16,7 +16,7 @@ type assignmentPair struct {
 
 func (a *assignmentPair) fullyContains() bool {
 	oneContainsTwo := true
-	for k, _ := range a.A1 {
+	for k := range a.A1 {
 		if _, ok := a.A2[k]; !ok {
 			oneContainsTwo = false
 			break
@@ -24,7 +24,7 @@ func (a *assignmentPair) fullyContains() bool {
 	}
 
 	twoContainsOne := true
-	for k, _ := range a.A2 {
+	for k := range a.A2 {
 		if _, ok := a.A1[k]; !ok {
 			twoContainsOne = false
 			break
@@ -34,7 +34,7 @@ func (a *assignmentPair) fullyContains() bool {
 }
 
 func (a *assignmentPair) overlap() bool {
-	for k, _ := range a.A1 {
+	for k := range a.A1 {
 		if _, ok := a.A2[k]; ok {
 			return true
 		}
