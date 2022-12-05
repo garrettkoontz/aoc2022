@@ -1,58 +1,26 @@
 {
-    "event": "2022",
-    "owner_id": 198134,
     "members": {
-        "552273": {
-            "last_star_ts": 1670079079,
-            "name": "Sarah Wooten",
-            "local_score": 10,
-            "id": 552273,
-            "global_score": 0,
+        "991884": {
+            "id": 991884,
             "completion_day_level": {
                 "1": {
-                    "1": {
-                        "star_index": 176170,
-                        "get_star_ts": 1669916989
-                    },
                     "2": {
-                        "get_star_ts": 1669918542,
-                        "star_index": 181639
+                        "star_index": 939,
+                        "get_star_ts": 1669871046
+                    },
+                    "1": {
+                        "get_star_ts": 1669871000,
+                        "star_index": 0
                     }
                 },
-                "3": {
+                "4": {
                     "2": {
-                        "get_star_ts": 1670079079,
-                        "star_index": 725449
+                        "get_star_ts": 1670130431,
+                        "star_index": 849010
                     },
                     "1": {
-                        "star_index": 721010,
-                        "get_star_ts": 1670077871
-                    }
-                },
-                "2": {
-                    "2": {
-                        "get_star_ts": 1670005978,
-                        "star_index": 501165
-                    },
-                    "1": {
-                        "star_index": 480878,
-                        "get_star_ts": 1670000205
-                    }
-                }
-            },
-            "stars": 6
-        },
-        "991884": {
-            "stars": 6,
-            "completion_day_level": {
-                "3": {
-                    "1": {
-                        "get_star_ts": 1670044133,
-                        "star_index": 578339
-                    },
-                    "2": {
-                        "star_index": 581799,
-                        "get_star_ts": 1670044401
+                        "star_index": 848163,
+                        "get_star_ts": 1670130385
                     }
                 },
                 "2": {
@@ -61,66 +29,148 @@
                         "get_star_ts": 1669958373
                     },
                     "1": {
-                        "get_star_ts": 1669957972,
-                        "star_index": 272175
+                        "star_index": 272175,
+                        "get_star_ts": 1669957972
                     }
                 },
-                "1": {
-                    "1": {
-                        "star_index": 0,
-                        "get_star_ts": 1669871000
-                    },
+                "3": {
                     "2": {
-                        "star_index": 939,
-                        "get_star_ts": 1669871046
+                        "get_star_ts": 1670044401,
+                        "star_index": 581799
+                    },
+                    "1": {
+                        "star_index": 578339,
+                        "get_star_ts": 1670044133
+                    }
+                },
+                "5": {
+                    "2": {
+                        "star_index": 1145514,
+                        "get_star_ts": 1670218081
+                    },
+                    "1": {
+                        "get_star_ts": 1670217642,
+                        "star_index": 1141414
                     }
                 }
             },
-            "global_score": 0,
-            "id": 991884,
-            "local_score": 18,
             "name": "Daniel Koontz",
-            "last_star_ts": 1670044401
+            "last_star_ts": 1670218081,
+            "local_score": 30,
+            "global_score": 0,
+            "stars": 10
         },
         "198134": {
-            "last_star_ts": 1670080691,
-            "local_score": 8,
-            "id": 198134,
-            "name": "garrettkoontz",
+            "local_score": 16,
+            "last_star_ts": 1670252029,
             "global_score": 0,
+            "stars": 10,
+            "id": 198134,
             "completion_day_level": {
-                "3": {
+                "5": {
                     "2": {
-                        "star_index": 731128,
-                        "get_star_ts": 1670080691
+                        "star_index": 1292411,
+                        "get_star_ts": 1670252029
                     },
+                    "1": {
+                        "get_star_ts": 1670251656,
+                        "star_index": 1290796
+                    }
+                },
+                "3": {
                     "1": {
                         "star_index": 727638,
                         "get_star_ts": 1670079698
+                    },
+                    "2": {
+                        "star_index": 731128,
+                        "get_star_ts": 1670080691
+                    }
+                },
+                "2": {
+                    "2": {
+                        "star_index": 433971,
+                        "get_star_ts": 1669989325
+                    },
+                    "1": {
+                        "get_star_ts": 1669988887,
+                        "star_index": 432150
+                    }
+                },
+                "4": {
+                    "2": {
+                        "get_star_ts": 1670175992,
+                        "star_index": 1047994
+                    },
+                    "1": {
+                        "star_index": 1047678,
+                        "get_star_ts": 1670175898
+                    }
+                },
+                "1": {
+                    "2": {
+                        "star_index": 248653,
+                        "get_star_ts": 1669943256
+                    },
+                    "1": {
+                        "star_index": 248279,
+                        "get_star_ts": 1669942971
+                    }
+                }
+            },
+            "name": "garrettkoontz"
+        },
+        "552273": {
+            "completion_day_level": {
+                "1": {
+                    "2": {
+                        "get_star_ts": 1669918542,
+                        "star_index": 181639
+                    },
+                    "1": {
+                        "get_star_ts": 1669916989,
+                        "star_index": 176170
+                    }
+                },
+                "4": {
+                    "1": {
+                        "get_star_ts": 1670178216,
+                        "star_index": 1055650
+                    },
+                    "2": {
+                        "star_index": 1059380,
+                        "get_star_ts": 1670179353
+                    }
+                },
+                "3": {
+                    "1": {
+                        "get_star_ts": 1670077871,
+                        "star_index": 721010
+                    },
+                    "2": {
+                        "star_index": 725449,
+                        "get_star_ts": 1670079079
                     }
                 },
                 "2": {
                     "1": {
-                        "star_index": 432150,
-                        "get_star_ts": 1669988887
+                        "star_index": 480878,
+                        "get_star_ts": 1670000205
                     },
                     "2": {
-                        "star_index": 433971,
-                        "get_star_ts": 1669989325
-                    }
-                },
-                "1": {
-                    "1": {
-                        "get_star_ts": 1669942971,
-                        "star_index": 248279
-                    },
-                    "2": {
-                        "get_star_ts": 1669943256,
-                        "star_index": 248653
+                        "star_index": 501165,
+                        "get_star_ts": 1670005978
                     }
                 }
             },
-            "stars": 6
+            "id": 552273,
+            "name": "Sarah Wooten",
+            "last_star_ts": 1670179353,
+            "local_score": 12,
+            "stars": 8,
+            "global_score": 0
         }
-    }
+    },
+    "event": "2022",
+    "owner_id": 198134
 }

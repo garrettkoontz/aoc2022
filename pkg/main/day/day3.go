@@ -30,12 +30,12 @@ func (s *sack) combined() map[rune]int {
 
 func share(i1 map[rune]int, i2 map[rune]int, i3 map[rune]int) rune {
 	share1 := make(map[rune]bool)
-	for k, _ := range i1 {
+	for k := range i1 {
 		if _, ok := i2[k]; ok {
 			share1[k] = true
 		}
 	}
-	for k, _ := range share1 {
+	for k := range share1 {
 		if _, ok := i3[k]; ok {
 			return k
 		}
@@ -44,7 +44,7 @@ func share(i1 map[rune]int, i2 map[rune]int, i3 map[rune]int) rune {
 }
 
 func (s *sack) share() rune {
-	for k, _ := range s.Compartment1 {
+	for k := range s.Compartment1 {
 		if _, ok := s.Compartment2[k]; ok {
 			return k
 		}
