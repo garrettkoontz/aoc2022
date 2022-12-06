@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"regexp"
 	"strconv"
-	"time"
 )
 
 type Day5 struct {
@@ -145,7 +144,6 @@ func (d Day5) processInput(input []string) *StackInput {
 }
 
 func (d Day5) Run() {
-	start := time.Now()
 	// Code to measure
 	fileName := "input/Day5.txt"
 	input, err := ReadLines(fileName)
@@ -153,19 +151,10 @@ func (d Day5) Run() {
 		panic(err)
 	}
 	inp := d.processInput(input)
-	start1 := time.Now()
 	fmt.Println(d.part1(inp))
-	duration := time.Since(start1)
-	fmt.Println(duration)
 	inp = d.processInput(input)
-	start1 = time.Now()
 	fmt.Println(d.part2(inp))
-	duration = time.Since(start1)
-	fmt.Println(duration)
-	duration = time.Since(start)
 
-	// Formatted string, such as "2h3m0.5s" or "4.503μs"
-	fmt.Println(duration)
 }
 
 func (d Day5) part1(i *StackInput) string {
