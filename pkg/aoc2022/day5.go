@@ -1,6 +1,7 @@
-package day
+package aoc2022
 
 import (
+	"aoc2022/pkg/util"
 	"fmt"
 	"regexp"
 	"strconv"
@@ -145,8 +146,8 @@ func (d Day5) processInput(input []string) *StackInput {
 
 func (d Day5) Run() {
 	// Code to measure
-	fileName := "input/Day5.txt"
-	input, err := ReadLines(fileName)
+	fileName := "input_2022/day5.txt"
+	input, err := util.ReadLines(fileName)
 	if err != nil {
 		panic(err)
 	}

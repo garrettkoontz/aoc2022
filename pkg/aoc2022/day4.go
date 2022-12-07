@@ -1,6 +1,7 @@
-package day
+package aoc2022
 
 import (
+	"aoc2022/pkg/util"
 	"fmt"
 	"strconv"
 	"strings"
@@ -43,8 +44,8 @@ func (a *assignmentPair) overlap() bool {
 }
 
 func (d Day4) Run() {
-	fileName := "input/day4.txt"
-	input, err := ReadLines(fileName)
+	fileName := "input_2022/day4.txt"
+	input, err := util.ReadLines(fileName)
 	if err != nil {
 		panic(err)
 	}

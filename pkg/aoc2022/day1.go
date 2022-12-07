@@ -1,6 +1,7 @@
-package day
+package aoc2022
 
 import (
+	"aoc2022/pkg/util"
 	"fmt"
 	"sort"
 	"strconv"
@@ -10,8 +11,8 @@ type Day1 struct {
 }
 
 func (d Day1) Run() {
-	fileName := "input/day1.txt"
-	input, err := ReadLines(fileName)
+	fileName := "input_2022/day1.txt"
+	input, err := util.ReadLines(fileName)
 	if err != nil {
 		panic(err)
 	}

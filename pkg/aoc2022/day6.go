@@ -1,6 +1,7 @@
-package day
+package aoc2022
 
 import (
+	"aoc2022/pkg/util"
 	"fmt"
 )
 
@@ -12,8 +13,8 @@ func (d Day6) processInput(input []string) []string {
 }
 
 func (d Day6) Run() {
-	fileName := "input/day6.txt"
-	input, err := ReadFile(fileName)
+	fileName := "input_2022/day6.txt"
+	input, err := util.ReadFile(fileName)
 	if err != nil {
 		panic(err)
 	}

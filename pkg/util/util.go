@@ -1,4 +1,4 @@
-package day
+package util
 
 import (
 	"os"

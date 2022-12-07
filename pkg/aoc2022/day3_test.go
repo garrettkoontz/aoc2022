@@ -1,4 +1,4 @@
-package day
+package aoc2022
 
 import (
 	"testing"
