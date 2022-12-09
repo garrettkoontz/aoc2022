@@ -27,29 +27,29 @@ var (
 	nine  util.Position2D = util.Position2D{X: 1, Y: 1}
 )
 
-func move1(position *util.Position2D, move util.Position2D) {
+func move1(position *util.Position2D, move *util.Position2D) {
 	if util.Abs(position.X+move.X) <= 1 && util.Abs(position.Y+move.Y) <= 1 {
 		position.Plus(move)
 	}
 }
 
-func (d *Day2) processInput(input []string) [][]util.Position2D {
-	result := make([][]util.Position2D, len(input))
+func (d *Day2) processInput(input []string) [][]*util.Position2D {
+	result := make([][]*util.Position2D, len(input))
 	for i, inp := range input {
-		res := make([]util.Position2D, len(inp))
+		res := make([]*util.Position2D, len(inp))
 		for j, r := range inp {
 			switch r {
 			case 'U':
-				res[j] = up
+				res[j] = &up
 				break
 			case 'D':
-				res[j] = down
+				res[j] = &down
 				break
 			case 'L':
-				res[j] = left
+				res[j] = &left
 				break
 			case 'R':
-				res[j] = right
+				res[j] = &right
 				break
 			default:
 				panic(r)
@@ -72,7 +72,7 @@ func (d *Day2) Run() {
 	fmt.Println(d.Part2(inp))
 }
 
-func (d *Day2) Part1(moves [][]util.Position2D) string {
+func (d *Day2) Part1(moves [][]*util.Position2D) string {
 	str := []rune{}
 	start := &util.Position2D{X: 0, Y: 0}
 	for _, v := range moves {
@@ -117,14 +117,14 @@ func (d *Day2) Part1(moves [][]util.Position2D) string {
 	return string(str)
 }
 
-func move(p *util.Position2D, move util.Position2D, mp map[util.Position2D]rune) {
+func move(p *util.Position2D, move *util.Position2D, mp map[util.Position2D]rune) {
 	newP := util.Position2D{X: p.X + move.X, Y: p.Y + move.Y}
 	if _, ok := mp[newP]; ok {
 		p.Plus(move)
 	}
 }
 
-func (d *Day2) Part2(moves [][]util.Position2D) string {
+func (d *Day2) Part2(moves [][]*util.Position2D) string {
 	mp := make(map[util.Position2D]rune)
 	mp[util.Position2D{X: -2, Y: 0}] = '5'
 	mp[util.Position2D{X: -1, Y: 0}] = '6'

@@ -67,7 +67,7 @@ func (d *Day1) Part1(moves []*Move) int {
 		if m.Direction == 'L' {
 			d = (dir + 3) % 4
 		}
-		turn := cardinal[d]
+		turn := &cardinal[d]
 		dir = d
 		turn.Times(m.Amount)
 		p.Plus(turn)
@@ -85,7 +85,7 @@ func (d *Day1) Part2(moves []*Move) int {
 		if m.Direction == 'L' {
 			d = (dir + 3) % 4
 		}
-		turn := cardinal[d]
+		turn := &cardinal[d]
 		dir = d
 		for i := 0; i < m.Amount; i++ {
 			p.Plus(turn)
